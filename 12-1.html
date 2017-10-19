@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Scrolling Nav - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Custom styles for this template-->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+	
+	
+	
+	
+                  <!--<button class="btn btn-primary" type="button" href="index.html">
+                    <i class="fa fa-times"></i>
+                    Go Back</button>-->
+	
+	
+	
+	
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'><!-- fancy header text -->
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template 
+    <link href="css/agency.min.css" rel="stylesheet"> -->
+	
+	
+	
+	
+	
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">BHWComputing</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+	
+	
+	
+	<!--Main Text-->
+	<br><br>
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <br><h2>12.1: Computer Arithmetic</h2><br><br>
+                  <!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>-->
+				  <h4>Adding & Subtracting in binary</h4><br>
+				<table class="table table-bordered">
+    <thead>
+        <tr class="value">
+            <th>128</th>
+            <th>64</th>
+            <th>32</th>
+            <th>16</th>
+			<th>8</th>
+			<th>4</th>
+			<th>2</th>
+			<th>1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>0</th>
+            <th>1</th>
+            <th>0</th>
+            <th>1</th>
+            <th>1</th>
+            <th>1</th>
+            <th>0</th>
+            <th>1</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <th>0</th>
+            <th>1</th>
+            <th>0</th>
+            <th>0</th>
+            <th>0</th>
+            <th>0<sub>1</sub></th>
+            <th>1</th>
+        </tr>
+        <tr class="answer">
+            <th>1</th>
+            <th>1</th>
+            <th>1</th>
+            <th>1</th>
+            <th>1</th>
+            <th>1</th>
+            <th>1</th>
+            <th>0</th>
+        </tr>
+    </tbody>
+</table>
+                  <p>When we add in binary, we work through each column from right to left; if there are two 0s, then we put a 0 in the answer row. Similarly, 
+				  if there is a 1 and a 0, or vice versa, we put a 1 in the answer row. If there are two 1s, then we put a 0 in the answer row, and carry on a 
+				  1 to the column on the left, to be added onto the values that are already there. If this creates a situation where there are three 1s, then a 1 
+				  is put in the answer row, and another 1 is carried onto the column on the left.
+				  <br>If the most significant bit (the leftmost one in this case) needs to carry on a 1 to the left, and there are no more bits left to add a 1 to, 
+				  then this creates an Overflow Error, as more bits are needed to store the value of the answer.
+				  <br>In the case of the above example, it shows 93 + 161, giving the answer 254.</p>
+				  
+				  <table class="table table-bordered">
+    <thead>
+        <tr class="value">
+            <th></th>
+			<th>128</th>
+            <th>64</th>
+            <th>32</th>
+            <th>16</th>
+			<th>8</th>
+			<th>4</th>
+			<th>2</th>
+			<th>1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th></th>
+			<th>1</th>
+            <th>1</th>
+            <th>0</th>
+            <th>1</th>
+            <th>1</th>
+            <th>1</th>
+            <th>1</th>
+            <th>1</th>
+        </tr>
+        <tr>
+            <th><sub>1</sub></th>
+			<th>1<sub>1</sub></th>
+            <th>1<sub>1</sub></th>
+            <th>1<sub>1</sub></th>
+            <th>0<sub>1</sub></th>
+            <th>0<sub>1</sub></th>
+            <th>0<sub>1</sub></th>
+            <th>1<sub>1</sub></th>
+            <th>1</th>
+        </tr>
+        <tr class="answer">
+			<th>1</th>
+            <th>1</th>
+            <th>1</th>
+            <th>0</th>
+            <th>0</th>
+            <th>0</th>
+            <th>0</th>
+            <th>1</th>
+            <th>0</th>
+        </tr>
+    </tbody>
+</table>
+			<p>The above is an example of the Overflow Error, as two 8-bit numbers have been added together, and in this case an extra bit is needed as the 
+			most significant bit needs to carry on another 1 to the left column.
+			<br>This example shows 221 + 227, which is 448. The highest value an 8-bit number can represent is 255, so the fact the answer is above this already 
+			shows us before we start that there will be an overflow error.</p>
+			
+			<br><br><br><br>
+			
+			<table class="table table-bordered">
+    <thead>
+        <tr class="value">
+			<th>128</th>
+            <th>64</th>
+            <th>32</th>
+            <th>16</th>
+			<th>8</th>
+			<th>4</th>
+			<th>2</th>
+			<th>1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+			<th>0</th>
+            <th><strike>1</strike>0</th>
+            <th><sup><strike>2</strike>1</sup>0</th>
+            <th><sup>2</sup>0</th>
+            <th><strike>1</strike>0</th>
+            <th><sup>2</sup>0</th>
+            <th>1</th>
+            <th>0</th>
+        </tr>
+        <tr>
+			<th>0</th>
+            <th>0</th>
+            <th>0</th>
+            <th>1</th>
+            <th>0</th>
+            <th>1</th>
+            <th>0</th>
+            <th>0</th>
+        </tr>
+        <tr class="answer">
+            <th>0</th>
+            <th>0</th>
+            <th>1</th>
+            <th>1</th>
+            <th>0</th>
+            <th>1</th>
+            <th>1</th>
+            <th>0</th>
+        </tr>
+    </tbody>
+</table>
+
+			<p>When we subtract in binary, we still work from right to left, and we subtract the bottom number from the top one as you would normally; so that a 0 - 0 would be 
+			a 0, a 1 - 0 would be a 1, and a 1 - 1 would be a 0. The complicated part comes when you have a 0 - 1.
+			<br>When this happens, you look to the left for the next column on the top row that has a 1 in it. When you find one, you get rid of it for a zero, and carry a 2 onto 
+			the right hand column. if there is another column after this between the initial 1, and where you needed one, then take 1 away from the 2 you just carried, leaving a 1 in 
+			its place, and carry on another 2 the the right hand column. An example of this occurring is shown above.
+			<br> The above example shows 74 - 20, giving 54, as shown in the answer row.</p>
+			
+			<br><br><h5>Questions</h5><br><br>
+			
+			<h6>1. 10100110 + 110011</h6>
+			<table class="table table-bordered">
+    <tbody>
+        <tr>
+			<th>1</th>
+            <th>0</th>
+            <th>1</th>
+            <th>0</th>
+            <th>0</th>
+            <th>1</th>
+            <th>1</th>
+            <th>0</th>
+        </tr>
+        <tr>
+			<th></th>
+            <th><sub>1</sub></th>
+            <th>1</th>
+            <th>1</th>
+            <th>0<sub>1</sub></th>
+            <th>0<sub>1</sub></th>
+            <th>1</th>
+            <th>1</th>
+        </tr>
+        <tr class="answer">
+            <th>1</th>
+            <th>1</th>
+            <th>0</th>
+            <th>1</th>
+            <th>1</th>
+            <th>0</th>
+            <th>0</th>
+            <th>1</th>
+        </tr>
+    </tbody>
+</table>
+			<h6>= 11011001</h6>
+			
+			<br><br>
+			
+			<h6>2. 1111 + 1001</h6>
+			<table class="table table-bordered">
+    <tbody>
+        <tr>
+			<th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th>1</th>
+            <th>1</th>
+            <th>1</th>
+            <th>1</th>
+        </tr>
+        <tr>
+			<th></th>
+            <th></th>
+            <th></th>
+            <th><sub>1</sub></th>
+            <th>1<sub>1</sub></th>
+            <th>0<sub>1</sub></th>
+            <th>0<sub>1</sub></th>
+            <th>1</th>
+        </tr>
+        <tr class="answer">
+            <th></th>
+            <th></th>
+            <th></th>
+            <th>1</th>
+            <th>1</th>
+            <th>0</th>
+            <th>0</th>
+            <th>0</th>
+        </tr>
+    </tbody>
+</table>
+			<h6>= 11000</h6>
+			
+			<br><br>
+			
+			<h6>3. 10010 - 1011</h6>
+			<table class="table table-bordered">
+    <tbody>
+        <tr>
+			<th></th>
+            <th></th>
+            <th></th>
+            <th><strike>1</strike>0</th>
+            <th><sup><strike>2</strike>1</sup>0</th>
+            <th><sup><strike>2</strike>1</sup>0</th>
+            <th><sup>2</sup><strike>1</strike>0</th>
+            <th><sup>2</sup>0</th>
+        </tr>
+        <tr>
+			<th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th>1</th>
+            <th>0</th>
+            <th>1</th>
+            <th>1</th>
+        </tr>
+        <tr class="answer">
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th>0</th>
+            <th>1</th>
+            <th>1</th>
+            <th>1</th>
+        </tr>
+    </tbody>
+</table>
+			<h6>= 0111</h6>
+			
+			<br><br>
+			
+			<h6>4. 10000 - 1111</h6>
+			<table class="table table-bordered">
+    <tbody>
+        <tr>
+			<th></th>
+            <th></th>
+            <th></th>
+            <th><strike>1</strike>0</th>
+            <th><sup><strike>2</strike>1</sup>0</th>
+            <th><sup><strike>2</strike>1</sup>0</th>
+            <th><sup><strike>2</strike>1</sup>0</th>
+            <th><sup>2</sup>0</th>
+        </tr>
+        <tr>
+			<th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th>1</th>
+            <th>1</th>
+            <th>1</th>
+            <th>1</th>
+        </tr>
+        <tr class="answer">
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th>0</th>
+            <th>0</th>
+            <th>0</th>
+            <th>1</th>
+        </tr>
+    </tbody>
+</table>
+			<h6>= 0001</h6>
+			
+			<br><br>
+			
+			<h6>5. 10101010 - 10111</h6>
+			<table class="table table-bordered">
+    <tbody>
+        <tr>
+			<th>1</th>
+            <th>0</th>
+            <th><strike>1</strike>0</th>
+            <th><sup>2</sup>0</th>
+            <th><strike>1</strike>0</th>
+            <th><sup><strike>2</strike>1</sup>0</th>
+            <th><sup>2</sup><strike>1</strike>0</th>
+            <th><sup>2</sup>0</th>
+        </tr>
+        <tr>
+			<th></th>
+            <th></th>
+            <th></th>
+            <th>1</th>
+            <th>0</th>
+            <th>1</th>
+            <th>1</th>
+            <th>1</th>
+        </tr>
+        <tr class="answer">
+            <th>1</th>
+            <th>0</th>
+            <th>0</th>
+            <th>1</th>
+            <th>0</th>
+            <th>0</th>
+            <th>1</th>
+            <th>1</th>
+        </tr>
+    </tbody>
+</table>
+			<h6>= 10010011</h6>
+			
+			<br><br><h4>Adding Two's Complement</h4><br><br>
+			
+			<p>Adding in Two's complement is the same as adding in regular binary, however, adding two large numbers together does create an issue. When two numbers 
+			that are added together are big enough to overflow into another column to the left, this makes the resulting answer negative, as the answer is in two's complement, where a 1 
+			in the most significant bit gives you a negative value, therefore giving an incorrect answer, as shown below with 01100111 + 01110011: </p>
+			<table class="table table-bordered">
+    <thead>
+        <tr class="value">
+            <th>-128</th>
+            <th>64</th>
+            <th>32</th>
+            <th>16</th>
+			<th>8</th>
+			<th>4</th>
+			<th>2</th>
+			<th>1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>0</th>
+            <th>1</th>
+            <th>1</th>
+            <th>0</th>
+            <th>0</th>
+            <th>1</th>
+            <th>1</th>
+            <th>1</th>
+        </tr>
+        <tr>
+            <th>0<sub>1</sub></th>
+            <th>1<sub>1</sub></th>
+            <th>1</th>
+            <th>1</th>
+            <th>0<sub>1</sub></th>
+            <th>0<sub>1</sub></th>
+            <th>1<sub>1</sub></th>
+            <th>1</th>
+        </tr>
+        <tr class="answer">
+            <th>1</th>
+            <th>1</th>
+            <th>0</th>
+            <th>1</th>
+            <th>1</th>
+            <th>0</th>
+            <th>1</th>
+            <th>0</th>
+        </tr>
+    </tbody>
+</table>
+			<p>This gives us the answer 11011010, creating the sum 103 + 115 = -38, which is obviously incorrect.
+			<br>If the calculation were to result in a number that was too small to represent, then this would be called underflow.</p>
+			
+			<br><br><h4>Subtracting Two's Complement</h4><br><br>
+			
+			<p>Subtracting in Two's complement is a fairly simple affair. To do so we simply take the number that is to be subtracted, and convert it into a negative 
+			Two's complement number and then follow the normal addition rules. To convert the number into a negative two's complement number, we simply invert each bit of the number,
+			 giving us the One's complement, and then add 1 to the value to give us Two's complement. We then add these numbers together like we would any other addition. 
+			 <br>For example, if we were to do 73 - 58, we would then take the binary for 58 (00111010), invert the bits (11000101), and then add 1 to the value (11000110). This then gives 
+			 us -58 in Two's complement. After this we simply add, as the sum is now 73 + - 58, which when cancelled down using maths gives us 73 - 58 anyway.</p>
+
+			<table class="table table-bordered">
+    <thead>
+        <tr class="value">
+            <th>-128</th>
+            <th>64</th>
+            <th>32</th>
+            <th>16</th>
+			<th>8</th>
+			<th>4</th>
+			<th>2</th>
+			<th>1</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>0</th>
+            <th>1</th>
+            <th>0</th>
+            <th>0</th>
+            <th>1</th>
+            <th>0</th>
+            <th>0</th>
+            <th>1</th>
+        </tr>
+        <tr>
+            <th>1<sub>1</sub></th>
+            <th>1</th>
+            <th>0</th>
+            <th>0</th>
+            <th>0</th>
+            <th>1</th>
+            <th>1</th>
+            <th>0</th>
+        </tr>
+        <tr class="answer">
+            <th>0</th>
+            <th>0</th>
+            <th>0</th>
+            <th>0</th>
+            <th>1</th>
+            <th>1</th>
+            <th>1</th>
+            <th>1</th>
+        </tr>
+    </tbody>
+</table>
+			<p>During the addition, we ignore the 1 at the end that is carried on, and just focus on the 8 bits. These give us the value 15, which is the correct answer for 
+			73 - 58.</p>
+			
+			<br><br><h4>Fixed Point Real Numbers</h4><br><br>
+			
+			<p> In denary, if we wanted to show the number 136.75, it would look like this: </p>
+			<table class="table table-bordered">
+    <thead>
+        <tr class="value">
+            <th>100</th>
+            <th>10</th>
+			<th>1</th>
+			<th>.</th>
+			<th>1/10</th>
+			<th>1/100</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>1</th>
+            <th>3</th>
+            <th>6</th>
+            <th>.</th>
+            <th>7</th>
+            <th>5</th>
+        </tr>
+	</tbody>
+</table>
+			<p>Well, in binary it is represented in a similar method, as shown below: </p>
+			<table class="table table-bordered">
+    <thead>
+        <tr class="value">
+            <th>128</th>
+            <th>64</th>
+			<th>32</th>
+			<th>16</th>
+			<th>8</th>
+			<th>4</th>
+			<th>2</th>
+			<th>1</th>
+			<th>.</th>
+			<th>1/2</th>
+			<th>1/4</th>
+			<th>1/8</th>
+			<th>1/16</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>1</th>
+            <th>0</th>
+            <th>0</th>
+            <th>0</th>
+            <th>1</th>
+            <th>0</th>
+			<th>0</th>
+			<th>0</th>
+			<th>.</th>
+			<th>1</th>
+			<th>1</th>
+			<th>0</th>
+			<th>0</th>
+        </tr>
+	</tbody>
+</table>
+			<p>Notice that how in binary, even with 4 bits after the decimal point, this binary method can only be accurate to 0.0625, which is not accurate enough
+			 in many cases.</p>
+			 <img src="img/portfolio/DecimalAccuracy.jpg">
+			 
+			 <br><br><h5>Questions</h5><br><br>
+			 
+			 <h6>1. 4.25</h6>
+			 <table class="table table-bordered">
+    <thead>
+        <tr class="value">
+			<th>16</th>
+			<th>8</th>
+			<th>4</th>
+			<th>2</th>
+			<th>1</th>
+			<th>.</th>
+			<th>1/2</th>
+			<th>1/4</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>0</th>
+            <th>0</th>
+            <th>1</th>
+			<th>0</th>
+			<th>0</th>
+			<th>.</th>
+			<th>0</th>
+			<th>1</th>
+        </tr>
+	</tbody>
+</table>
+			<br><br>
+			
+			<h6>2. 7.75</h6>
+			<table class="table table-bordered">
+    <thead>
+        <tr class="value">
+			<th>16</th>
+			<th>8</th>
+			<th>4</th>
+			<th>2</th>
+			<th>1</th>
+			<th>.</th>
+			<th>1/2</th>
+			<th>1/4</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>0</th>
+            <th>0</th>
+            <th>1</th>
+			<th>1</th>
+			<th>1</th>
+			<th>.</th>
+			<th>1</th>
+			<th>1</th>
+        </tr>
+	</tbody>
+</table>
+			<br><br>
+			
+			<h6>3. 3.5</h6>
+			<table class="table table-bordered">
+    <thead>
+        <tr class="value">
+			<th>32</th>
+			<th>16</th>
+			<th>8</th>
+			<th>4</th>
+			<th>2</th>
+			<th>1</th>
+			<th>.</th>
+			<th>1/2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>0</th>
+            <th>0</th>
+            <th>0</th>
+			<th>0</th>
+			<th>1</th>
+			<th>1</th>
+			<th>.</th>
+			<th>1</th>
+        </tr>
+	</tbody>
+</table>
+			<br><br>
+			
+			<h6>4. 3.125</h6>
+			<table class="table table-bordered">
+    <thead>
+        <tr class="value">
+			<th>8</th>
+			<th>4</th>
+			<th>2</th>
+			<th>1</th>
+			<th>.</th>
+			<th>1/2</th>
+			<th>1/4</th>
+			<th>1/8</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>0</th>
+            <th>0</th>
+            <th>1</th>
+			<th>1</th>
+			<th>.</th>
+			<th>0</th>
+			<th>0</th>
+			<th>1</th>
+        </tr>
+	</tbody>
+</table>
+
+
+			<br><br><h4>Floating Point Real Numbers</h4><br><br>
+			
+			
+			<p>Fixed Point has some limiting factors. Even if you used 4 bytes (32 bits) to hold the number, and kept 8 bits for the fractional part, the largets number you would be 
+			able to hold would be just over 8 million. Another format is used for storing these very large numbers, called Floating Point.
+			<br>In decimal, 1,200,000,000,000 can be written as 0.12x10<sup>13</sup>, the decimal has been moved 13 places to the right; </p>
+			<table class="table table-bordered">
+    <thead>
+        <tr class="value">
+			<th>Mantissa</th>
+			<th>Exponent</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>0.12</th>
+            <th>13</th>
+        </tr>
+	</tbody>
+</table>
+
+			<p>This same technique can be applied to binary using two bytes (16 bits); 10 bits for the mantissa (1 bit sign and 9 bits value) and 6 bits 
+			for the exponent.</p>
+			<table class="table table-bordered">
+    <thead>
+        <tr class="value">
+			<th>Sign</th>
+			<th>Mantissa</th>
+			<th>Exponent</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>0</th>
+            <th>110100000</th>
+            <th>000011</th>
+        </tr>
+	</tbody>
+</table>
+			<p>The sign bit tells us that this particular number is positive, the Mantissa represents 0.1101, and the exponent tells us to move the decimal point 3 places to the right, 
+			making the number 110.1, converting to 6.5 in decimal. The decimal point initially starts off between the sign bit and the mantissa.
+			
+			<br><br>If the exponent begins with a one that means that it is a negative exponent, and that the binary point is moved left instead of right. This is used to show much smaller numbers.</p>
+			<table class="table table-bordered">
+    <thead>
+        <tr class="value">
+			<th>Sign</th>
+			<th>Mantissa</th>
+			<th>Exponent</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>0</th>
+            <th>100000000</th>
+            <th>111110</th>
+        </tr>
+	</tbody>
+</table>
+			<p>Here, the sign tells us that the number is still positive, the Mantissa is 0.1, and the exponent is -2. This means we move the decimal point 2 places to the left, giving us 0.001, converting into 
+			0.125.</p>
+			
+			<br><br><h5>Questions - Floating Point to Denary</h5><br><br>
+			
+			<h6>1. 0 101010000 000010</h6>
+			<p>Here we have a Mantissa of 0.10101, and an exponent of 2, moving the decimal point 2 places to the right, giving us 010.101, giving us 0.625 in denary.</p>
+			
+			<br><br><h6>2. 0 110110000 000100</h6>
+			<p>This Mantissa is 0.11011 with an exponent of 4, moving the decimal point 4 places to the right, giving 1101.1, or 13.5 in denary.</p>
+			
+			<br><br><h6>3. 0 101000000 111111</h6>
+			<p>Here we have a mantissa of 0.101 and a mantissa of -1, giving us 0.0101, converting to 5/16, or 0.3125 in decimal.</p>
+			
+			<br><br><h6>4. 1 001101000 000110</h6>
+			<p>Here the sign bit tells us that we have a negative number. The mantissa is 1.001101, and the exponent 6, giving us 1001101, or -43.</p>
+			
+			
+			
+			<br><br><h4>Floating Point Two's Complement</h4><br><br>
+			
+			
+			
+			<p>Floating Points work in a similar way with Two's complement; The mantissa and exponent are both in Two's Complement, and and both be positive or negative, or each be separate.</p>
+			<img src="img/portfolio/MantissaExponent.jpg"><br><br>
+			
+			<h6>Positive Mantissa / Positive Exponent</h6>
+			<p>Works just as it normally would, giving a positive answer.</p>
+			
+			<h6>Positive Mantissa / Negative Exponent</h6>
+			<p>This means that you will have a positive mantissa, but the exponent will move the decimal point to the left instead, resulting in a very small number as a result.</p>
+			
+			<h6>Negative Mantissa / Positive Exponent</h6>
+			<p>This one is a bit more complicated. If the mantissa is negative, you have to convert it into two's complement by inverting the bits to get one's complement, then add one to the value, giving you the 
+			Two's complement. For example, 110011000 becomes -001101000. The Exponent works as normal so if it was 000011 (3 places to the right), then the final value would be -0011.01000, or -3.25 in decimal.</p>
+			
+			<h6>Negative Mantissa / Negative Exponent</h6>
+			<p>This works very similarly to the last one, however with this one, you must also convert the exponent before it is applied. e.g. 111110 becomes -000010, or -2, meaning that the decimal place is moved two places to the left.</p>
+			
+			
+			<br><br><h5>Questions</h5><br><br>
+			
+			<h6>1. 0 101001000 000100</h6>
+			<p>Here the mantissa is 0.101001, with an exponent of 4, moving the decimal point 4 to the right, giving 1010.01, or 10.25 in decimal.</p>
+			
+			<h6>2. 0 101100100 000110</h6>
+			<p>Mantissa is 0.1011001 and the exponent is 6, giving 101100.1, or 44.5 in decimal.</p>
+			
+			<h6>3. 0 111000000 111111</h6>
+			<p>Here the mantissa is 0.111, but we must first change the exponent, by inverting the bits (giving -000000), and add one to get Two's complement, giving us an exponent of -1, moving the decimal point one place to the left. </p>
+			This gives us a value of 0.0111, or 0.4375 in decimal.
+			
+			<h6>4. 1 110010000 000011</h6>
+			<p>Our Mantissa here is a negative number, meaning we must first invert the bits (0001101111) and add one, giving -0.001110000. Our exponent is 3, meaning our value is -1.11, or -1.75 in decimal.</p>
+			
+			<h6>5. 1 100110000 000011</h6>
+			<p>Again, we must invert the bits of the mantissa, to get -0011001111, and add one, to get -0.011010000. We have an exponent of 3, meaning our final value is -11.01, or -3.25 in decimal.</p>
+			
+			
+			
+			
+			<br><br><h4>Normalisation</h4><br><br>
+			
+			
+			
+			
+			</div>
+              </div>
+            </div>
+          </div>
+        </div>
